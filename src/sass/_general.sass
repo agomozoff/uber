@@ -1,0 +1,448 @@
+// Header
+
+nav
+    height: 50px
+    background-color: #212121
+
+header
+    position: relative
+
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 13px 70px
+    margin: 0
+    list-style-type: none
+
+.menu-link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+
+.menu-item
+    border-right: 2px dotted #ffffff
+    padding-right: 28px
+    &:last-of-type
+        border-right: none
+
+.hamburger
+    display: none
+
+.subheader
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+    position: absolute
+    top: 50px
+    width: 100%
+
+.subheader-logo
+    max-width: 100%
+    display: block
+    margin-top: 16px
+
+.subheader-text
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+    margin-top: 6px
+
+.subheader-call
+    margin-top: 20px
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+    text-align: right
+
+.subheader-phone
+    display: block
+    margin-top: 8px
+    line-height: 12px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-align: right
+    text-transform: uppercase
+    &:link
+        color: #ffffff
+        text-decoration: none
+    &:visited
+        color: #ffffff
+        text-decoration: none
+    &:active
+        color: #ffffff
+        text-decoration: none
+    &:focus
+        color: #ffffff
+        text-decoration: none
+
+.subheader-btn
+    width: 172px
+    height: 46px
+    border-radius: 4px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    background-image: linear-gradient(to top, $aquablue 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    margin-top: 18px
+    @include btn_hover
+
+.xs-visible
+    display: none
+
+//Section Promo
+
+.promo
+    min-height: 800px
+    padding: 150px 0 135px 0
+    background: url("../img/main_bg.jpg") center (center / cover) no-repeat
+
+.promo-header
+    color: #ffffff
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 46px
+    margin-bottom: 0
+
+.promo-subheader
+    color: #ffffff
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+    font-weight: 400
+    line-height: 28px
+    margin-top: 20px
+    margin-bottom: 0
+
+.promo-descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+
+.promo-btn
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    background-image: linear-gradient(to top, $aquablue 0%, #4ce2ff 100%)
+    border-radius: 4px
+    display: block
+    margin: 118px auto 0 auto
+    @include btn_hover
+
+// Section Advantages
+
+.advantages
+    min-height: 900px
+    padding: 71px 0 65px 0
+
+.label
+    width: 112px
+    height: 24px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto
+    padding-top: 5px
+
+.title
+    color: #222222
+    font-size: 38px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    line-height: 30px
+    margin-top: 38px
+    margin-bottom: 0
+
+.row
+    margin-top: 5px
+
+.advantages .advantages-item
+    display: flex
+    justify-content: space-around
+    margin-top: 35px
+
+.advantages-round
+    width: 113px
+    height: 113px
+    background-color: $aquablue
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 10px
+
+.advantages-descr
+    width: 341px
+
+    .advantages-subtitle
+        color: $aquablue
+        font-size: 17px
+        font-weight: 400
+        line-height: 21px
+
+    .advantages-text
+        color: #202020
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
+        margin-top: 10px
+
+// Section Mobile
+
+.subtitle
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    line-height: 17px
+    margin-top: 19px
+
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url('../img/bg_mobile.jpg') center center/cover no-repeat
+    .row
+        margin-top: 13px
+    &-item
+        width: 320px
+        height: 280px
+        padding-top: 92px
+        margin: 19px auto 0 auto
+        position: relative
+        &-1
+            background: url('../img/mobile_item_1.jpg') center center/cover no-repeat
+        &-2
+            background: url('../img/mobile_item_2.jpg') center center/cover no-repeat
+        &-3
+            background: url('../img/mobile_item_3.jpg') center center/cover no-repeat
+        &-4
+            background: url('../img/mobile_item_4.jpg') center center/cover no-repeat
+        &-5
+            background: url('../img/mobile_item_5.jpg') center center/cover no-repeat
+        &-6
+            background: url('../img/mobile_item_6.jpg') center center/cover no-repeat
+
+        &-subtitle
+            color: #ffffff
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+
+        &-plus
+            width: 26px
+            height: 26px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #000000
+            border-radius: 50%
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translate(-50%)
+            cursor: pointer
+            img
+                width: 55%
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $aquablue
+                transition: 0.4s all
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 2px
+                height: 14px
+                background-color: $aquablue
+                transition: 0.4s all
+            &:hover
+                &::before, &::after
+                    background-color: $lightpink
+
+// Section Available
+
+.available
+    min-height: 896px
+    padding: 57px 0 138px 0
+    background: url('../img/available_uber_bg.jpg') center center/cover no-repeat
+    &-img
+        display: block
+        margin: 56px auto 0 auto
+    &-text
+        margin-top: 4px
+        text-align: center
+        font-size: 17px
+        color: #222222
+.label_bg-white
+    background-color: #ffffff
+    color: #070716
+
+.title_color-white,.subtitle_color-white
+    color: #ffffff
+
+// Section Requirements
+
+.requirements
+    min-height: 919px
+    padding: 68px 0 51px 0
+    &-wrap
+        margin: 33px 0
+    &-title
+        font-size: 22px
+        font-weight: 400
+        color: #1ca8c3
+        line-height: 17px
+    &-list
+        list-style-type: none
+        margin-top: 23px
+        padding-left: 50px
+        li
+            font-size: 17px
+            font-weight: 300
+            color: #222222
+            margin-bottom: 10px
+            position: relative
+            &:before
+                content: ''
+                display: block
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.png') center center/cover no-repeat
+                position: absolute
+                left: -33px
+                top: 2px
+
+    &-descr
+        font-size: 17px
+        font-weight: 300
+        color: #1ca8c3
+
+    .warning
+        .requirements-title
+            color: #ff5656
+        .requirements-list
+            li
+                &::before
+                    background: url('../icons/check_red.png') center center/cover no-repeat
+
+// Section World
+
+.world
+    min-height: 717px
+    padding: 49px 0
+    background: url('../img/world_bg.jpg') center center/cover no-repeat
+    position: relative
+    &__link
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        color: #1fbad6
+        &:hover
+            color: #ffffff
+            text-decoration: none
+
+// Section Footer
+
+.footer
+    min-height: 156px
+    padding: 14px 0 39px 0
+    position: relative
+    &__line-blue
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+        margin: 0 auto
+    &__wrap
+        margin: 33px 23px 0 23px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        .social-wrap
+            display: flex
+            width: 290px
+            padding-right: 138px
+            justify-content: space-between
+            .social-circle
+                width: 32px
+                height: 32px
+                background-color: #070716
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+        .links-wrap
+            width: 392px
+            .main-links
+                padding: 0 13px
+                display: flex
+                justify-content: space-between
+                .main-link
+                    font-size: 15px
+                    font-weight: 300
+                    line-height: 15px
+                    text-transform: uppercase
+                    color: #070716
+                    &:hover
+                        text-decoration: none
+            .sublinks
+                display: flex
+                justify-content: space-between
+                margin-top: 15px
+                .sublink
+                    font-size: 11px
+                    font-weight: 300
+                    line-height: 10px
+                    text-transform: uppercase
+                    color: #999999
+                    &:hover
+                        text-decoration: none
+        .store-wrap
+            width: 290px
+    &__link
+        font-size: 11px
+        line-height: 10px
+        font-weight: 400
+        text-transform: uppercase
+        color: #1fbad6
+        display: block
+        text-align: center
+        margin-top: 19px
+        &:hover, &:active
+            text-decoration: none
+            color: #1fbad6
+    &__lineblack
+        width: 100%
+        height: 8px
+        background-color: #070716
+        position: absolute
+        bottom: 0
